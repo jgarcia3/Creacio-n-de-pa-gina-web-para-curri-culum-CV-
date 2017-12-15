@@ -1,6 +1,6 @@
 @font-face {
   src: url("../fonts/Pangolin-Regular.ttf");
-  font-family: pangolin;
+  font-family: fuente;
 }
 * {
   box-sizing: border-box;
@@ -19,6 +19,8 @@ body {
   width: 100%;
   background-color: var(--secondary-text-color);
   z-index: 1;
+  border-bottom: solid;
+  border-bottom-color: var(--main-text-color);
 }
 .navbar > .navbar__list {
   float: right;
@@ -29,7 +31,7 @@ body {
 .navbar > .navbar__list > .navbar__links {
   display: inline-block;
   font-size: 1rem;
-  font-family: pangolin;
+  font-family: fuente;
 }
 .navbar > .navbar__list > .navbar__links a {
   display: inline-block;
@@ -44,4 +46,50 @@ body {
 .navbar > .navbar__list > .navbar__link-active a:hover {
   background-color: var(--main-text-color);
   color: var(--secondary-text-color);
+}
+.header > .header__title {
+  position: absolute;
+  color: var(--secondary-text-color);
+  font-family: fuente;
+  font-size: 3rem;
+  left: 10%;
+  top: 15%;
+  text-align: center;
+}
+.header > .header__image {
+  background-image: url(../images/img_header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+.header > .header__cite {
+  font-family: fuente;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+section:nth-child(even) {
+  background-color: var(--main-text-color);
+  color: var(--secondary-text-color);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+section:nth-child(odd) {
+  background-color: var(--secondary-text-color);
+  color: var(--main-text-color);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  position: relative;
+}
+section {
+  height: 500px;
+  margin-left: 30px;
+  position: relative;
+  margin-top: 0;
+}
+.container > .section__container > .section__container__title {
+  margin-top: 0;
+  width: 100%;
+  top: 0;
 }
