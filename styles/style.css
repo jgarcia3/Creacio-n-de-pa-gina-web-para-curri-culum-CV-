@@ -10,8 +10,8 @@
 body {
   margin: 0;
   padding: 0;
-  --main-text-color: #263238;
-  --secondary-text-color: #b0bec5;
+  --main-text-color: black;
+  --secondary-text-color: white;
 }
 .navbar {
   position: fixed;
@@ -42,6 +42,7 @@ body {
 .navbar > .navbar__list > .navbar__link-active a {
   background-color: var(--main-text-color);
   color: var(--secondary-text-color);
+  border-top-right-radius: 50%;
 }
 .navbar > .navbar__list > .navbar__link-active a:hover {
   background-color: var(--main-text-color);
@@ -51,10 +52,12 @@ body {
   position: absolute;
   color: var(--secondary-text-color);
   font-family: fuente;
-  font-size: 3rem;
-  left: 10%;
-  top: 15%;
-  text-align: center;
+  font-size: 8rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header > .header__image {
   background-image: url(../images/img_header.jpg);
@@ -69,13 +72,13 @@ body {
   text-align: center;
   font-size: 1.2rem;
 }
-section:nth-child(even) {
+section:nth-child(odd) {
   background-color: var(--main-text-color);
   color: var(--secondary-text-color);
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 }
-section:nth-child(odd) {
+section:nth-child(even) {
   background-color: var(--secondary-text-color);
   color: var(--main-text-color);
   margin-left: calc(50% - 50vw);
@@ -88,12 +91,83 @@ section {
   position: relative;
   margin-top: 0;
 }
+.div__container {
+  height: 100vh;
+}
 h2 {
+  width: 100%;
+  font-size: 4.5em;
   margin-top: 0;
+  text-align: center;
+  padding-top: 30px;
+  font-family: fuente;
 }
 .section__container__title {
-  padding-top: 2%;
-  padding-top: 2%;
-  width: 100%;
+  max-width: 100%;
   top: 0;
+}
+#section__introduccion {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0%;
+}
+.section__introduccion__esquema {
+  max-width: 300px;
+  height: 300px;
+  flex: 1;
+}
+.section__introduccion__esquema__centro {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  font-size: 3rem;
+  font-family: fuente;
+  text-align: center;
+}
+.section__introduccion__img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: solid white;
+}
+.section__introduccion__esquema__bis {
+  height: 150px;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+}
+.linea {
+  width: 150px;
+  border: solid white;
+}
+.section__quien-soy__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+}
+.section__quien-soy__img {
+  width: 600px;
+  max-height: 100%;
+  margin-left: 3rem;
+  border-radius: 15px;
+  flex: 1;
+}
+.section__quien-soy__secciones__texto {
+  padding: 5rem;
+}
+p {
+  font-family: fuente;
+  font-size: 1.2rem;
+  flex: 1;
 }
