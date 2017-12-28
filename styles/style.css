@@ -169,3 +169,7 @@ p {
   font-family: fuente;
   font-size: 1.2rem;
 }
+.video__javier {
+  max-width: 100vh;
+  padding-left: 32%;
+}
