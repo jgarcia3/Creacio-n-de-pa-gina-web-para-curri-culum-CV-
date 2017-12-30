@@ -169,7 +169,20 @@ p {
   font-family: fuente;
   font-size: 1.2rem;
 }
+.section__sobreMi_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .video__javier {
   max-width: 100vh;
-  padding-left: 32%;
+}
+.section__sobreMi__cite {
+  max-width: 100%;
+  text-align: center;
+  padding: 5% 10%;
+}
+#comillas::first-letter {
+  color: rgb(61, 56, 56);
+  font-size: 4rem;
 }
