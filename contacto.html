@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CV Online Javier García</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar__list">
+            <li class="navbar__links ">
+                <a href="./index.html">Introducción</a>
+            </li>
+            <li class="navbar__links">
+                <a href="#">Quién Soy</a>
+            </li>
+            <li class="navbar__links">
+                <a href="#">Estudios</a>
+            </li>
+            <li class="navbar__links">
+                <a href="#">Sobre Mi</a>
+            </li>
+            <li class="navbar__links navbar__link-active">
+                <a href="#">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section class=" section__container ">
+            <div class="section__container__title container__contacto">
+                <h2 class="section__title">Contacto</h2>
+                <div class="formulario">
+                    <form name="contacto" method="get">
+                        <div>
+                            <p>Escribe tu nombre y apellidos</p>
+                            <div class="nomreYapellido">
+                                <div class="espacio__nomreYapellido">
+                                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                                </div>
+
+                                <div>
+                                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Escribe tu correo</p>
+                            <input type="email" id="email" name="email" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+"
+                                required>
+                        </div>
+                        <div class="seleccionable__otros">
+                            <p>¿Selecciona cómo me has conocido?</p>
+
+                            <select class="espacio_seleccionable">
+                                <option value="clase">En clase</option>
+                                <option value="trabajo">En el trabajo</option>
+                                <option value="calle">En la calle</option>
+                                <option value="otros">Otros</option>
+                                <!-- falta añadir desplegable de otros -->
+                            </select>
+                            <input type="text" name="otro" id="otro" placeholder="Escribe otros">
+                        </div>
+
+                        <div>
+                            <p>Escribe un número de contacto</p>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" maxlength="9" pattern="[6 + 0-9]" required>
+                            <!-- falta validar que es un número de teléfono -->
+                        </div>
+                        <div>
+                            <p>Escribe el comentario que desees</p>
+                            <textarea name="peticiones" id="peticiones" cols="45" rows="10"></textarea>
+                            <!-- falta añadir el máximo de palabras -->
+                        </div>
+                        <div class="espacio__boton">
+                            <button type="submit" id="enviar">Enviar</button>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer2">
+        Javier García Arias © 2017
+    </footer>
+</body>
+
+</html>

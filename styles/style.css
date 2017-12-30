@@ -103,6 +103,7 @@ h2 {
   padding-top: 30px;
   font-family: fuente;
 }
+
 .section__container__title {
   max-width: 100%;
   top: 0;
@@ -183,6 +184,25 @@ p {
   padding: 5% 10%;
 }
 #comillas::first-letter {
-  color: rgb(61, 56, 56);
+  color: rgb(61, 55, 55);
   font-size: 4rem;
+}
+.container__contacto {
+  padding-top: 30px;
+}
+.footer1 {
+  display: flex;
+  background-color: var(--main-text-color);
+  color: var(--secondary-text-color);
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.footer2 {
+  display: flex;
+  background-color: var(--secondary-text-color);
+  color: var(--main-text-color);
+  height: 50px;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,0 +1,38 @@
+input {
+  padding: 0.5rem;
+  border: 0.1rem solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #00b0ff;
+  padding: 1rem 4rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.formulario {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.nomreYapellido {
+  display: flex;
+  flex-direction: row;
+}
+.espacio__nomreYapellido {
+  padding-right: 5px;
+}
+.espacio__boton {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.seleccionable__otros {
+  display: flex;
+  flex-direction: column;
+}
+.espacio_seleccionable {
+  margin-bottom: 15px;
+}
