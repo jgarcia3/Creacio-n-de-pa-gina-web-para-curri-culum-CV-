@@ -11,6 +11,7 @@ button[type="submit"] {
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 3rem;
 }
 .formulario {
   max-width: 100%;

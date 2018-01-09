@@ -87,9 +87,8 @@ section:nth-child(even) {
   position: relative;
 }
 section {
-  height: 100vh;
   margin-left: 30px;
-  position: relative;
+
   margin-top: 0;
 }
 .div__container {
@@ -161,6 +160,7 @@ h3 {
   max-width: 600px;
   max-height: 100%;
   margin-left: 3rem;
+  margin-bottom: 3rem;
   border-radius: 15px;
 }
 .section__quien-soy__secciones__texto {
@@ -205,4 +205,12 @@ p {
   height: 50px;
   align-items: center;
   justify-content: center;
+}
+.section__estudios__descripcion {
+  padding: 0 3rem 3rem 3rem;
+}
+.section__estudios__gif__container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
 }
