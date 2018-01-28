@@ -37,3 +37,13 @@ button[type="submit"] {
 .espacio_seleccionable {
   margin-bottom: 15px;
 }
+#otro {
+  visibility: hidden;
+}
+
+#peticiones {
+  color: black;
+}
+#palabras {
+  font-size: 0.85rem;
+}

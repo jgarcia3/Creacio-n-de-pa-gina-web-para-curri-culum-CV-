@@ -54,14 +54,13 @@
                                 required>
                         </div>
                         <div class="seleccionable__otros">
-                            <p>¿Selecciona cómo me has conocido?</p>
+                            <p>Selecciona cómo me has conocido</p>
 
-                            <select class="espacio_seleccionable">
-                                <option value="clase">En clase</option>
-                                <option value="trabajo">En el trabajo</option>
-                                <option value="calle">En la calle</option>
-                                <option value="otros">Otros</option>
-                                <!-- falta añadir desplegable de otros -->
+                            <select size=4 name="conocido" class="espacio_seleccionable">
+                                <option onclick="deshabilitar()" id="clase" value="clase">En clase</option>
+                                <option onclick="deshabilitar()" id="trabajo" value="trabajo">En el trabajo</option>
+                                <option onclick="deshabilitar()" id="calle" value="calle">En la calle</option>
+                                <option onclick="habilitar()" id="otros" value="otros">Otros</option>
                             </select>
                             <input type="text" name="otro" id="otro" placeholder="Escribe otros">
                         </div>
@@ -69,11 +68,11 @@
                         <div>
                             <p>Escribe un número de contacto</p>
                             <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" maxlength="9" required>
-                            <!-- Revisar si falta validar que es un número de teléfono -->
                         </div>
                         <div>
-                            <p>Escribe el comentario que desees</p>
-                            <textarea name="peticiones" id="peticiones" cols="45" rows="10"></textarea>
+                            <p>Escribe el comentario que desees con un máximo de 150 palabras</p>
+                            <p id="palabras">Llevas 0 palabras escritas</p>
+                            <textarea name="peticiones" id="peticiones" cols="45" rows="10" onkeypress="wordCount()"></textarea>
                             <!-- falta añadir el máximo de palabras -->
                         </div>
                         <div class="espacio__boton">
@@ -87,6 +86,8 @@
     <footer class="footer2">
         Javier García Arias © 2017
     </footer>
+    <script src="./scripts/contact.js"></script>
+    <script src="./scripts/ajax.js"></script>
 </body>
 
 </html>
